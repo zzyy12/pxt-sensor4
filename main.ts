@@ -60,7 +60,7 @@ namespace sensor4 {
     //% blockGap=8
     export function calibrateeeee(): void {
 
-        i2cWrite(N76E003AT20_ADDRESS, 0x15, 0x01);
+        i2cWrite(N76E003AT20_ADDRESS, 0x15, 1);
     }
 
     //% blockId="HaodaBit_set_height" block="设置四路巡线传感器在|%pn|阈值|%heights"
