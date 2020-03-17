@@ -55,7 +55,7 @@ namespace sensor4 {
         return val;
     }
 
-    //% blockId="HaodaBit_set_height" block="四路巡线传感器自动校准"
+    //% blockId="HaodaBit_calibrateeeee" block="四路巡线传感器自动校准"
     //% weight=90
     //% blockGap=8
     export function calibrateeeee(): void {
