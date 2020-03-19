@@ -55,10 +55,23 @@ namespace sensor4 {
         return val;
     }
 
-    //% blockId="HaodaBit_calibrateeeee" block="四路巡线传感器自动校准"
+    //% blockId="HaodaBit_calibrate2" block="新四路巡线传感器自动校准"
     //% weight=90
     //% blockGap=8
-    export function calibrateeeee(): void {
+    export function linecalibrate_test(): void {
+
+        i2cWrite(N76E003AT20_ADDRESS, 0x21, 0x61);
+        i2cWrite(N76E003AT20_ADDRESS, 0x22, 0x7a);
+        i2cWrite(N76E003AT20_ADDRESS, 0x23, 0x68);
+        i2cWrite(N76E003AT20_ADDRESS, 0x24, 0x65);
+        
+    }
+
+
+    //% blockId="HaodaBit_calibrate" block="四路巡线传感器自动校准"
+    //% weight=90
+    //% blockGap=8
+    export function linecalibrate(): void {
 
         i2cWrite(N76E003AT20_ADDRESS, 0x15, 1);
     }
